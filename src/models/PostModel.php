@@ -1,7 +1,7 @@
 <?php
 
 namespace Bahjaat\Pack\Models;
-use Bahjaat\Pack\Models\CommentModel as Comment;
+// use Bahjaat\Pack\Models\CommentModel as Comment;
 
 class PostModel extends \Eloquent {
 	protected $fillable = [];
@@ -9,6 +9,6 @@ class PostModel extends \Eloquent {
 
 	public function comments()
 	{
-		return $this->hasMany('Comment','post_id');
+		return $this->hasMany('Bahjaat\Pack\Models\CommentModel','post_id');
 	}
 }

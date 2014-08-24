@@ -1,7 +1,7 @@
 <?php
 
 namespace Bahjaat\Pack\Models;
-use Bahjaat\Pack\Models\PostModel as Post;
+// use Bahjaat\Pack\Models\PostModel as Post;
 
 class CommentModel extends \Eloquent {
 	protected $fillable = [];
@@ -9,6 +9,6 @@ class CommentModel extends \Eloquent {
 
 	public function posts()
 	{
-		return $this->belongsTo('Post');
+		return $this->belongsTo('Bahjaat\Pack\Models\PostModel');
 	}
 }
