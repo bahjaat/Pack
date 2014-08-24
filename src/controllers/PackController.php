@@ -13,9 +13,7 @@ class PackController extends \BaseController {
 	 */
 	public function index()
 	{
-		//
-		// echo "packcontroller";
-		// return;
+		// Comment the index function
 		$comments = Post::find(1)->comments;
 		echo '<pre>';
 		// print_r($comments);
